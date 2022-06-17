@@ -1,34 +1,93 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 header {
   background-color: bisque;
 }
+
 header h1 {
   background-color: yellow;
   border: 10px black solid;
-  margin-block-start: revert;
+  -webkit-margin-before: revert;
+          margin-block-start: revert;
   text-align: center;
   font-size: 70px;
 }
 
+#marcador {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#marcador #usuario {
+  border: 5px yellow solid;
+  background-color: black;
+  color: white;
+  margin: 10px;
+  font-size: 30px;
+  margin-right: 10px;
+  padding: 10px;
+}
+
+#marcador #usuario #marcadorUsuario {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 30px;
+}
+
+#marcador #bot {
+  border: 5px yellow solid;
+  background-color: black;
+  color: white;
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  font-size: 30px;
+  margin-right: 10px;
+  padding: 10px;
+}
+
+#marcador #bot #marcadorBot {
+  margin-right: 10px;
+  margin-left: 10px;
+  font-size: 30px;
+}
+
 .escoger h3 {
   text-align: center;
-  margin-block-start: revert;
+  -webkit-margin-before: revert;
+          margin-block-start: revert;
   font-size: 50px;
 }
 
 .eleccion {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin-top: 60px;
 }
+
 .eleccion img {
   width: 300px;
   height: 300px;
   border: 10px black solid;
 }
-
 /*# sourceMappingURL=estiloindex.css.map */
