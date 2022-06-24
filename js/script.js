@@ -26,6 +26,7 @@ let marcadoBot = 0;
 const marcadorUsuario_span = document.getElementById("marcadorUsuario");
 const marcadorBot_span = document.getElementById("marcadorBot");
 const eleccion = ['piedra', 'papel', 'tijera'];
+const resultado_h3 = document.querySelector("#resultado2")
 
 
 
@@ -63,6 +64,7 @@ const eleccion = ['piedra', 'papel', 'tijera'];
     if (usuariochoose=="piedra") {
 
           if (eleccionBot=="tijera") {
+            //resultado_h3.innerHTML= "GANAS! Has escogido "+usuariochoose + " que gana a " +eleccionBot+ ".";
             Swal.fire({
               title: 'Has ganado: '+usuariochoose+" gana a "+eleccionBot+ '!',
               showClass: {
@@ -76,6 +78,7 @@ const eleccion = ['piedra', 'papel', 'tijera'];
           
           }
           if (eleccionBot=="papel") {
+            //resultado_h3.innerHTML= "PIERDES! Has escogido "+usuariochoose + " que pierde contra " +eleccionBot+ ".";
             Swal.fire({
               title: 'Has perdido: '+eleccionBot+" gana a "+usuariochoose+ '!',
               showClass: {
@@ -89,6 +92,7 @@ const eleccion = ['piedra', 'papel', 'tijera'];
           }
 
           if (eleccionBot=="piedra") {
+            //resultado_h3.innerHTML= "EMPATE! Has escogido "+usuariochoose + " que empata con " +eleccionBot+ ".";
             Swal.fire({
               title: 'Has empatado: '+usuariochoose+" empata con "+eleccionBot+ '!',
               showClass: {
@@ -97,13 +101,16 @@ const eleccion = ['piedra', 'papel', 'tijera'];
               hideClass: {
                 popup: 'animate__animated animate__backOutDown'
               }
-            })
+              })
           }
     }
+
+
 
     if (usuariochoose=="papel") {
 
       if (eleccionBot=="tijera") {
+        //resultado_h3.innerHTML= "PIERDES! Has escogido "+usuariochoose + " que pierde contra " +eleccionBot+ ".";
         Swal.fire({
           title: 'Has perdido: '+eleccionBot+" gana a "+usuariochoose+ '!',
           showClass: {
@@ -117,6 +124,7 @@ const eleccion = ['piedra', 'papel', 'tijera'];
       }
 
       if (eleccionBot=="papel") {
+        //resultado_h3.innerHTML= "EMPATE! Has escogido "+usuariochoose + " que empata con " +eleccionBot+ ".";
         Swal.fire({
           title: 'Has empatado: '+usuariochoose+" empata con "+eleccionBot+ '!',
           showClass: {
@@ -129,6 +137,7 @@ const eleccion = ['piedra', 'papel', 'tijera'];
       }
 
       if (eleccionBot=="piedra") {
+        //resultado_h3.innerHTML= "GANAS! Has escogido "+usuariochoose + " que gana a " +eleccionBot+ ".";
         Swal.fire({
           title: 'Has ganado: '+usuariochoose+" gana a "+eleccionBot+ '!',
           showClass: {
@@ -142,9 +151,12 @@ const eleccion = ['piedra', 'papel', 'tijera'];
       }
     }
 
+
+
     if (usuariochoose=="tijera") {
 
       if (eleccionBot=="tijera") {
+        //resultado_h3.innerHTML= "EMPATE! Has escogido "+usuariochoose + " que empata con " +eleccionBot+ ".";
         Swal.fire({
           title: 'Has empatado: '+usuariochoose+" empata con "+eleccionBot+ '!',
           showClass: {
@@ -157,6 +169,7 @@ const eleccion = ['piedra', 'papel', 'tijera'];
       }
 
       if (eleccionBot=="papel") {
+        //resultado_h3.innerHTML= "GANAS! Has escogido "+usuariochoose + " que gana a " +eleccionBot+ ".";
         Swal.fire({
           title: 'Has ganado: '+usuariochoose+" gana a "+eleccionBot+ '!',
           showClass: {
@@ -170,7 +183,7 @@ const eleccion = ['piedra', 'papel', 'tijera'];
       }
 
       if (eleccionBot=="piedra") {
-      
+        //resultado_h3.innerHTML= "PIERDES! Has escogido "+usuariochoose + " que pierde contra " +eleccionBot+ ".";
         Swal.fire({
           title: 'Has perdido: '+eleccionBot+" gana a "+usuariochoose+ '!',
           showClass: {

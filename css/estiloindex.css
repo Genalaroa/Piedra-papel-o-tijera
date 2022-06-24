@@ -10,11 +10,12 @@ header {
 
 header h1 {
   background-color: yellow;
-  border: 10px black solid;
+  border: 10px black double;
   -webkit-margin-before: revert;
           margin-block-start: revert;
   text-align: center;
-  font-size: 70px;
+  font-size: 80px;
+  font-weight: 600;
 }
 
 #marcador {
@@ -74,6 +75,7 @@ header h1 {
   -webkit-margin-before: revert;
           margin-block-start: revert;
   font-size: 50px;
+  font-weight: 600;
 }
 
 .eleccion {
@@ -89,5 +91,13 @@ header h1 {
   width: 300px;
   height: 300px;
   border: 10px black solid;
+}
+
+#resultado h3 {
+  text-align: center;
+  -webkit-margin-before: revert;
+          margin-block-start: revert;
+  font-size: 50px;
+  font-weight: 600;
 }
 /*# sourceMappingURL=estiloindex.css.map */
