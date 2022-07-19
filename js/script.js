@@ -29,7 +29,6 @@ const eleccion = ['piedra', 'papel', 'tijera'];
 const resultado_h3 = document.querySelector("#resultado2")
 
 
-
   function boteleccion () { 
     const random = Math.floor(Math.random () *3);
     return eleccion [random];
@@ -61,47 +60,22 @@ const resultado_h3 = document.querySelector("#resultado2")
 
     const eleccionBot = boteleccion ();
 
+
     if (usuariochoose=="piedra") {
 
           if (eleccionBot=="tijera") {
-            //resultado_h3.innerHTML= "GANAS! Has escogido "+usuariochoose + " que gana a " +eleccionBot+ ".";
-            Swal.fire({
-              title: 'Has ganado: '+usuariochoose+" gana a "+eleccionBot+ '!',
-              showClass: {
-                popup: 'animate__animated animate__bounce'
-              },
-              hideClass: {
-                popup: 'animate__animated animate__bounceOutDown'
-              }
-            })
+            resultado_h3.innerHTML= "GANAS! Has escogido "+usuariochoose + " que gana a " +eleccionBot+ ".";
+            
             marcadorUsuario++;
-          
           }
           if (eleccionBot=="papel") {
-            //resultado_h3.innerHTML= "PIERDES! Has escogido "+usuariochoose + " que pierde contra " +eleccionBot+ ".";
-            Swal.fire({
-              title: 'Has perdido: '+eleccionBot+" gana a "+usuariochoose+ '!',
-              showClass: {
-                popup: 'animate__animated animate__zoomIn'
-              },
-              hideClass: {
-                popup: 'animate__animated animate__hinge'
-              }
-            })
+            resultado_h3.innerHTML= "PIERDES! Has escogido "+usuariochoose + " que pierde contra " +eleccionBot+ ".";
+            
             marcadoBot++;
           }
 
           if (eleccionBot=="piedra") {
-            //resultado_h3.innerHTML= "EMPATE! Has escogido "+usuariochoose + " que empata con " +eleccionBot+ ".";
-            Swal.fire({
-              title: 'Has empatado: '+usuariochoose+" empata con "+eleccionBot+ '!',
-              showClass: {
-                popup: 'animate__animated animate__flash'
-              },
-              hideClass: {
-                popup: 'animate__animated animate__backOutDown'
-              }
-              })
+            resultado_h3.innerHTML= "EMPATE! Has escogido "+usuariochoose + " que empata con " +eleccionBot+ ".";
           }
     }
 
@@ -109,93 +83,47 @@ const resultado_h3 = document.querySelector("#resultado2")
 
     if (usuariochoose=="papel") {
 
-      if (eleccionBot=="tijera") {
-        //resultado_h3.innerHTML= "PIERDES! Has escogido "+usuariochoose + " que pierde contra " +eleccionBot+ ".";
-        Swal.fire({
-          title: 'Has perdido: '+eleccionBot+" gana a "+usuariochoose+ '!',
-          showClass: {
-            popup: 'animate__animated animate__zoomIn'
-          },
-          hideClass: {
-            popup: 'animate__animated animate__hinge'
-          }
-        })
-        marcadoBot++;
-      }
+          if (eleccionBot=="tijera") {
+            resultado_h3.innerHTML= "PIERDES! Has escogido "+usuariochoose + " que pierde contra " +eleccionBot+ ".";
+            
+            marcadoBot++;
+        }
 
-      if (eleccionBot=="papel") {
-        //resultado_h3.innerHTML= "EMPATE! Has escogido "+usuariochoose + " que empata con " +eleccionBot+ ".";
-        Swal.fire({
-          title: 'Has empatado: '+usuariochoose+" empata con "+eleccionBot+ '!',
-          showClass: {
-            popup: 'animate__animated animate__flash'
-          },
-          hideClass: {
-            popup: 'animate__animated animate__backOutDown'
+          if (eleccionBot=="papel") {
+            resultado_h3.innerHTML= "EMPATE! Has escogido "+usuariochoose + " que empata con " +eleccionBot+ ".";
+            
           }
-        })
-      }
 
-      if (eleccionBot=="piedra") {
-        //resultado_h3.innerHTML= "GANAS! Has escogido "+usuariochoose + " que gana a " +eleccionBot+ ".";
-        Swal.fire({
-          title: 'Has ganado: '+usuariochoose+" gana a "+eleccionBot+ '!',
-          showClass: {
-            popup: 'animate__animated animate__bounce'
-          },
-          hideClass: {
-            popup: 'animate__animated animate__bounceOutDown'
+          if (eleccionBot=="piedra") {
+            resultado_h3.innerHTML= "GANAS! Has escogido "+usuariochoose + " que gana a " +eleccionBot+ ".";
+            
+            marcadorUsuario++;
           }
-        })
-        marcadorUsuario++;
-      }
     }
 
 
 
     if (usuariochoose=="tijera") {
 
-      if (eleccionBot=="tijera") {
-        //resultado_h3.innerHTML= "EMPATE! Has escogido "+usuariochoose + " que empata con " +eleccionBot+ ".";
-        Swal.fire({
-          title: 'Has empatado: '+usuariochoose+" empata con "+eleccionBot+ '!',
-          showClass: {
-            popup: 'animate__animated animate__flash'
-          },
-          hideClass: {
-            popup: 'animate__animated animate__backOutDown'
+          if (eleccionBot=="tijera") {
+            resultado_h3.innerHTML= "EMPATE! Has escogido "+usuariochoose + " que empata con " +eleccionBot+ ".";
+            
           }
-        })
-      }
 
-      if (eleccionBot=="papel") {
-        //resultado_h3.innerHTML= "GANAS! Has escogido "+usuariochoose + " que gana a " +eleccionBot+ ".";
-        Swal.fire({
-          title: 'Has ganado: '+usuariochoose+" gana a "+eleccionBot+ '!',
-          showClass: {
-            popup: 'animate__animated animate__bounce'
-          },
-          hideClass: {
-            popup: 'animate__animated animate__bounceOutDown'
+          if (eleccionBot=="papel") {
+            resultado_h3.innerHTML= "GANAS! Has escogido "+usuariochoose + " que gana a " +eleccionBot+ ".";
+            
+            marcadorUsuario++;
           }
-        })
-        marcadorUsuario++;
-      }
 
-      if (eleccionBot=="piedra") {
-        //resultado_h3.innerHTML= "PIERDES! Has escogido "+usuariochoose + " que pierde contra " +eleccionBot+ ".";
-        Swal.fire({
-          title: 'Has perdido: '+eleccionBot+" gana a "+usuariochoose+ '!',
-          showClass: {
-            popup: 'animate__animated animate__zoomIn'
-          },
-          hideClass: {
-            popup: 'animate__animated animate__hinge'
-          }
-        })
-        marcadoBot++;
+          if (eleccionBot=="piedra") {
+            resultado_h3.innerHTML= "PIERDES! Has escogido "+usuariochoose + " que pierde contra " +eleccionBot+ ".";
+            
+            marcadoBot++;
       }
     }
+
+
   
           marcadorUsuario_span.innerHTML=marcadorUsuario;
           marcadorBot_span.innerHTML=marcadoBot;
@@ -203,6 +131,10 @@ const resultado_h3 = document.querySelector("#resultado2")
       console.log (usuariochoose +"||"+  eleccionBot );
   
   }
+
+  
+
+  
 
 
 
